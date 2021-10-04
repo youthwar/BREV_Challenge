@@ -1,5 +1,7 @@
 import { operations } from './sampleData';
 import process from './processor';
 
-
-process(operations);
+(async () => {
+  const results = await process(operations);
+  console.log({ results });
+})();
